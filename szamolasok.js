@@ -32,8 +32,8 @@ export function operatorLetrehoz(){
         const egyenloseg=document.querySelector(`#operator${6}`);
         egyenloseg.addEventListener('click', function(){
             
-            
-            kijelzoelem.innerHTML=osszeg+kijelzoelem.innerHTML
+            let masikszam=parseInt(kijelzoelem.innerHTML);
+            kijelzoelem.innerHTML=(osszeg+masikszam)
 
         })
         osszeadelem.addEventListener('click', function(){
@@ -47,7 +47,10 @@ export function operatorLetrehoz(){
     
 
 }
+export function klikkek(){
 
+    
+}
 export function tisztit(){
     const torles=document.querySelector(`#operator${7}`)
     torles.addEventListener('click', function(){
