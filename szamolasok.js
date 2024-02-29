@@ -27,17 +27,26 @@ export function operatorLetrehoz(){
             gombClick(index)
         })
     }
-    const torles=document.querySelector(`#operator${7}`)
-    torles.addEventListener('click', function(){
-        kijelzoelem.innerHTML=""
-    })
+    for (let index = 1; index < 7; index++) {
+        let buttonelem=document.querySelector(`#operator${index}`);
+        buttonelem.addEventListener('click', function(){
+
+            operatorClick();
+        })
+    }
+    
     
 
 }
 
-let a=1
+export function tisztit(){
+    const torles=document.querySelector(`#operator${7}`)
+    torles.addEventListener('click', function(){
+        kijelzoelem.innerHTML=""
+    })
+}
 export function gombClick(a){
-    console.log("ramkattintottak")
+    
     kijelzoelem.innerHTML+=a
 }
 export function operatorClick(){

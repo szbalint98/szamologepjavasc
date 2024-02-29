@@ -1,5 +1,5 @@
-import {gombClick, gombokLetrehoz, operatorLetrehoz} from "./szamolasok.js"
+import {gombClick, gombokLetrehoz, operatorLetrehoz, tisztit} from "./szamolasok.js"
 gombokLetrehoz();
 operatorLetrehoz();
-
+tisztit();
 console.log(operator4)
