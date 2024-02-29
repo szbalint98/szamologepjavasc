@@ -1,0 +1,50 @@
+main{
+    
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    
+    padding: 10px;
+    margin-top: 100px;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    
+}
+#szamokgomb{
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#szamokgomb button{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+#operatorok{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#operatorok button{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+.kijelzo label{
+    height: 30px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.kijelzo{
+    margin-bottom: 20px;
+    width: 200px;
+}
+.keret{
+    width: 200px;
+    padding: 5px;
+    border: solid 1px black;
+}
