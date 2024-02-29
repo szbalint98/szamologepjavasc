@@ -14,14 +14,25 @@ export function gombokLetrehoz(){
 export function operatorLetrehoz(){
     let txt=""
     for (let index = 1; index < 8; index++) {
-        txt+=`<button id="operator${index}" onclick="operatorClick(${index})">${operatorlista[index-1]}</button>`;   
+        txt+=`<button id="operator${index}" onclick="operatorClick(${index})">${operatorlista[index-1]}</button>`;
+           
+
     }
     operatorokelem.innerHTML=txt;
+    for (let index = 1; index < 10; index++) {
+        let buttonelem=document.querySelector(`#gomb${index}`);
+        buttonelem.addEventListener('click', function(){
+
+            gombClick(index)
+        })
+    }
 
 }
 
-export function gombClick(){
+let a=1
+export function gombClick(a){
     console.log("ramkattintottak")
+    kijelzoelem.innerHTML+=a
 }
 export function operatorClick(){
     
