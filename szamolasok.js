@@ -15,6 +15,7 @@ export function operatorLetrehoz(){
     let txt=""
     for (let index = 1; index < 8; index++) {
         txt+=`<button id="operator${index}" onclick="operatorClick(${index})">${operatorlista[index-1]}</button>`;
+        
            
 
     }
@@ -26,6 +27,11 @@ export function operatorLetrehoz(){
             gombClick(index)
         })
     }
+    const torles=document.querySelector(`#operator${7}`)
+    torles.addEventListener('click', function(){
+        kijelzoelem.innerHTML=""
+    })
+    
 
 }
 
