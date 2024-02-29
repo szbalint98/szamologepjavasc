@@ -50,7 +50,11 @@ export function gombClick(a){
     kijelzoelem.innerHTML+=a
 }
 export function operatorClick(){
-    
+    let tartalom=kijelzoelem.innerHTML
+    console.log(tartalom)
+    let osszeg=osszead(tartalom,6)
+    kijelzoelem.innerHTML=""
+    kijelzoelem.innerHTML+=osszeg
 }
 export function osszead(a,b){
     return a+b;

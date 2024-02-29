@@ -2,4 +2,3 @@ import {gombClick, gombokLetrehoz, operatorLetrehoz, tisztit} from "./szamolasok
 gombokLetrehoz();
 operatorLetrehoz();
 tisztit();
-console.log(operator4)
