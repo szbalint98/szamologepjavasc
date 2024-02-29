@@ -1,7 +1,7 @@
 const gombelem=document.querySelector("#szamokgomb")
 const operatorokelem=document.querySelector("#operatorok")
 const kijelzoelem=document.querySelector("#kijelzoo")
-
+let jel=0
 const operatorlista=["+","-","*","/",".","=","C"]
 export function gombokLetrehoz(){
     let txt=""
@@ -21,19 +21,26 @@ export function operatorLetrehoz(){
     }
     operatorokelem.innerHTML=txt;
     for (let index = 1; index < 10; index++) {
-        let buttonelem=document.querySelector(`#gomb${index}`);
+        const buttonelem=document.querySelector(`#gomb${index}`);
         buttonelem.addEventListener('click', function(){
 
             gombClick(index)
         })
     }
-    for (let index = 1; index < 7; index++) {
-        let buttonelem=document.querySelector(`#operator${index}`);
-        buttonelem.addEventListener('click', function(){
+    
+        const osszeadelem=document.querySelector(`#operator${1}`);
+        const egyenloseg=document.querySelector(`#operator${6}`);
+        egyenloseg.addEventListener('click', function(){
+            let masodikszamok=osszeadClick(jel);
+            let eredmeny=osszead(parseInt(elsoszamok),parseInt(masodikszamok))
+            kijelzoelem.innerHTML=eredmeny;
 
-            operatorClick();
         })
-    }
+        osszeadelem.addEventListener('click', function(){
+
+           let elsoszamok=osszeadClick();
+        })
+    
     
     
 
@@ -49,12 +56,11 @@ export function gombClick(a){
     
     kijelzoelem.innerHTML+=a
 }
-export function operatorClick(){
+export function osszeadClick(jel){
     let tartalom=kijelzoelem.innerHTML
-    console.log(tartalom)
-    let osszeg=osszead(tartalom,6)
+    jel+=1
     kijelzoelem.innerHTML=""
-    kijelzoelem.innerHTML+=osszeg
+    return tartalom
 }
 export function osszead(a,b){
     return a+b;
