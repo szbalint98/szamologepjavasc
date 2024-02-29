@@ -1,7 +1,7 @@
 const gombelem=document.querySelector("#szamokgomb")
 const operatorokelem=document.querySelector("#operatorok")
 const kijelzoelem=document.querySelector("#kijelzoo")
-let jel=0
+
 const operatorlista=["+","-","*","/",".","=","C"]
 export function gombokLetrehoz(){
     let txt=""
@@ -31,8 +31,8 @@ export function operatorLetrehoz(){
         const osszeadelem=document.querySelector(`#operator${1}`);
         const egyenloseg=document.querySelector(`#operator${6}`);
         egyenloseg.addEventListener('click', function(){
-            let masodikszamok=osszeadClick(jel);
-            let eredmeny=osszead(parseInt(elsoszamok),parseInt(masodikszamok))
+            
+            
             kijelzoelem.innerHTML=eredmeny;
 
         })
@@ -56,9 +56,10 @@ export function gombClick(a){
     
     kijelzoelem.innerHTML+=a
 }
-export function osszeadClick(jel){
+export function osszeadClick(){
     let tartalom=kijelzoelem.innerHTML
-    jel+=1
+    tartalom=parseInt(tartalom)
+    
     kijelzoelem.innerHTML=""
     return tartalom
 }
