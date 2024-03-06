@@ -100,6 +100,7 @@ export function szoroz(a,b){
     return a*b;
 }
 function elsoszam() {
+    osszeg=0
     let tartalom=kijelzoelem.innerHTML
     tartalom=parseInt(tartalom)
     osszeg+=tartalom
