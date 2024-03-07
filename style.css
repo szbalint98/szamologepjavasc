@@ -46,6 +46,7 @@ main{
     justify-content: right;
     align-items: center;
     padding: 2px;
+    border-radius: 5pt;
     
 }
 .kijelzo{
@@ -53,6 +54,7 @@ main{
     width: 200px;
 }
 .keret{
+    border-radius: 6pt;
     background-color: rgb(239, 241, 100);
     width: 200px;
     padding: 5px;
