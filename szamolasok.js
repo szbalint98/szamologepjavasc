@@ -29,21 +29,21 @@ export function operatorLetrehoz(){
 }
  export function muveletek() {
     
-        const osszeadelem=document.querySelector(`#operator${1}`);
-        const kivonelem=document.querySelector(`#operator${2}`);
-        const szorzas=document.querySelector(`#operator${3}`);
-        const egyenloseg=document.querySelector(`#operator${6}`);
-        const osztelem=document.querySelector(`#operator${4}`);
+        const osszeadElem=document.querySelector(`#operator${1}`);
+        const kivonElem=document.querySelector(`#operator${2}`);
+        const szorzasElem=document.querySelector(`#operator${3}`);
+        const egyenlosegElem=document.querySelector(`#operator${6}`);
+        const osztelemElem=document.querySelector(`#operator${4}`);
         
-        osszeadelem.addEventListener('click', osszeadClick,{  
+        osszeadElem.addEventListener('click', osszeadClick,{  
         })
-        kivonelem.addEventListener('click' ,kivonasClick,{       
+        kivonElem.addEventListener('click' ,kivonasClick,{       
         })
-        szorzas.addEventListener('click',szorozClick,{     
+        szorzasElem.addEventListener('click',szorozClick,{     
         })
-        osztelem.addEventListener('click',osztasClick,{   
+        osztelemElem.addEventListener('click',osztasClick,{   
     })
-        egyenloseg.addEventListener('click', function(){
+        egyenlosegElem.addEventListener('click', function(){
             
             let masikszam=parseInt(kijelzoelem.innerHTML);
             if  (jel===1) {
