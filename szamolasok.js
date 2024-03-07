@@ -1,7 +1,6 @@
 const gombelem=document.querySelector("#szamokgomb")
 const operatorokelem=document.querySelector("#operatorok")
 const kijelzoelem=document.querySelector("#kijelzoo")
-const kijelzo2Eelem=document.querySelector('#kilejzoo2')
 let osszeg=0
 let jel=0
 const operatorlista=["+","-","*","/",".","=","C"]
@@ -57,7 +56,6 @@ export function operatorLetrehoz(){
             }
         })
 }
-
 export function tisztit(){
     const torles=document.querySelector(`#operator${7}`)
     torles.addEventListener('click', function(){
@@ -86,7 +84,6 @@ export function osztasClick(){
     elsoszam()
     jel=4 
 }
-
 export function osszead(a,b){
     return a+b;
 }
@@ -106,5 +103,4 @@ function elsoszam() {
     osszeg+=tartalom
     console.log(osszeg)
     kijelzoelem.innerHTML=""
-    
 }
