@@ -1,11 +1,8 @@
+
 main{
-    
-    width: 400px;
-    text-align: center;
     margin: auto;
-    
     padding: 10px;
-    margin-top: 100px;
+    
 }
 .grid{
     display: flex;
@@ -57,6 +54,7 @@ main{
     border-radius: 6pt;
     background-color: rgb(239, 241, 100);
     width: 200px;
+    margin: auto;
     padding: 5px;
     border: solid 1px black;
 }
